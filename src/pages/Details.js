@@ -16,7 +16,7 @@ function DetailPage(props) {
             .then((pokeData) => {
                 setPokeData(pokeData);
             });
-    }, []);
+    }, [params]);
 
     if (pokeData === undefined) {
         return;
